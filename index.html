@@ -7,7 +7,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="author" content="Michele Argenti">
-    <link rel="stylesheet" href="styles/">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,10 @@
 
 <body>
     <header>
-        <img src="images/profile.png" alt="Profile">
-        <span>Michele Argenti</span>
+        <div class="header-top">
+            <img src="images/profile.png" alt="Profile">
+            <span>Michele Argenti</span>
+        </div>
         <nav>
             <a href="#">Home</a>
             <a href="">Chamber</a>
@@ -33,9 +35,9 @@
     </header>
 
     <main>
-        <h1>Home</h1>
+        <h2>Home</h2>
         <section>
-            <h2>Course Work</h2>
+            <h3>Course Work</h3>
             <ul>
                 <li></li>
                 <li></li>
@@ -43,11 +45,24 @@
             </ul>
         </section>
         <section>
-            <h2>Venice, Italy</h2>
+            <h3>Venice, Italy</h3>
             <img src="images/venice.jpeg" alt="Venice">
         </section>
         <section>
-            <h2>Web and Computer Programming Certificate</h2>
+            <h3>Web and Computer Programming Certificate</h3>
+            <div class="selection">
+                <button>All</button>
+                <button>CSE</button>
+                <button>WDD</button>
+            </div>
+            <div class="courses">
+                <span id="cse110">CSE 110</span>
+                <span id="wdd130">WDD 130</span>
+                <span id="cse111">CSE 111</span>
+                <span id="cse210">CSE 210</span>
+                <span id="wdd131">WDD 131</span>
+                <span id="wdd231">WDD 231</span>
+            </div>
         </section>
     </main>
 
