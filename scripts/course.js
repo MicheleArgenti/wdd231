@@ -89,49 +89,14 @@ courses.forEach(course => {
     coursesContainer.appendChild(courseElement);
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    const buttons = document.querySelectorAll('.selection button');
-    const courses = document.querySelectorAll('.courses span');
-
-    buttons.forEach(button => {
-        button.addEventListener('click', function () {
-            const buttonId = this.id;
-
-            courses.forEach(course => {
-                course.style.backgroundColor = '#E6EDEF';
+document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.selection button').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filter = btn.id;
+            document.querySelectorAll('.courses span').forEach(span => {
+                span.style.display = filter === 'all' || span.id.startsWith(filter) ? 'block' : 'none';
+                span.style.backgroundColor = filter === 'all' || span.id.startsWith(filter) ? '#66301D' : '#E6EDEF';
             });
-
-            if (buttonId === 'all') {
-                courses.forEach(course => {
-                    course.style.backgroundColor = '#66301D';
-                    document.querySelector('#wdd130').style.display = 'block';
-                    document.querySelector('#wdd131').style.display = 'block';
-                    document.querySelector('#wdd231').style.display = 'block';
-                    document.querySelector('#cse110').style.display = 'block';
-                    document.querySelector('#cse111').style.display = 'block';
-                    document.querySelector('#cse210').style.display = 'block';
-                });
-            } else if (buttonId === 'cse') {
-                document.querySelector('#cse110').style.backgroundColor = '#66301D';
-                document.querySelector('#cse111').style.backgroundColor = '#66301D';
-                document.querySelector('#cse210').style.backgroundColor = '#66301D';
-                document.querySelector('#cse110').style.display = 'block';
-                document.querySelector('#cse111').style.display = 'block';
-                document.querySelector('#cse210').style.display = 'block';
-                document.querySelector('#wdd130').style.display = 'none';
-                document.querySelector('#wdd131').style.display = 'none';
-                document.querySelector('#wdd231').style.display = 'none';
-            } else if (buttonId === 'wdd') {
-                document.querySelector('#wdd130').style.backgroundColor = '#66301D';
-                document.querySelector('#wdd131').style.backgroundColor = '#66301D';
-                document.querySelector('#wdd231').style.backgroundColor = '#66301D';
-                document.querySelector('#wdd130').style.display = 'block';
-                document.querySelector('#wdd131').style.display = 'block';
-                document.querySelector('#wdd231').style.display = 'block';
-                document.querySelector('#cse110').style.display = 'none';
-                document.querySelector('#cse111').style.display = 'none';
-                document.querySelector('#cse210').style.display = 'none';
-            }
         });
     });
 });
