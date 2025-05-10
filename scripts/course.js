@@ -104,15 +104,33 @@ document.addEventListener('DOMContentLoaded', function () {
             if (buttonId === 'all') {
                 courses.forEach(course => {
                     course.style.backgroundColor = '#66301D';
+                    document.querySelector('#wdd130').style.display = 'block';
+                    document.querySelector('#wdd131').style.display = 'block';
+                    document.querySelector('#wdd231').style.display = 'block';
+                    document.querySelector('#cse110').style.display = 'block';
+                    document.querySelector('#cse111').style.display = 'block';
+                    document.querySelector('#cse210').style.display = 'block';
                 });
             } else if (buttonId === 'cse') {
                 document.querySelector('#cse110').style.backgroundColor = '#66301D';
                 document.querySelector('#cse111').style.backgroundColor = '#66301D';
                 document.querySelector('#cse210').style.backgroundColor = '#66301D';
+                document.querySelector('#cse110').style.display = 'block';
+                document.querySelector('#cse111').style.display = 'block';
+                document.querySelector('#cse210').style.display = 'block';
+                document.querySelector('#wdd130').style.display = 'none';
+                document.querySelector('#wdd131').style.display = 'none';
+                document.querySelector('#wdd231').style.display = 'none';
             } else if (buttonId === 'wdd') {
                 document.querySelector('#wdd130').style.backgroundColor = '#66301D';
                 document.querySelector('#wdd131').style.backgroundColor = '#66301D';
                 document.querySelector('#wdd231').style.backgroundColor = '#66301D';
+                document.querySelector('#wdd130').style.display = 'block';
+                document.querySelector('#wdd131').style.display = 'block';
+                document.querySelector('#wdd231').style.display = 'block';
+                document.querySelector('#cse110').style.display = 'none';
+                document.querySelector('#cse111').style.display = 'none';
+                document.querySelector('#cse210').style.display = 'none';
             }
         });
     });
