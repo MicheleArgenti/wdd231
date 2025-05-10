@@ -170,8 +170,10 @@ section p {
     flex: 1;
     margin: 0.5rem;
     padding: 0.5rem;
-    background-color: #000203;
+    background-color: #c8c4b0;
     color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .selection button:hover {
@@ -180,6 +182,8 @@ section p {
     padding: 0.5rem;
     background-color: gray;
     color: #FFFFFF;
+    font-weight: bold;
+    font-size: 15px;
 }
 
 .courses {
