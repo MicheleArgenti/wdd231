@@ -163,4 +163,8 @@ footer p {
     padding: 0.5rem;
 }
 
+#lastModified {
+    margin-bottom: 0;
+}
+
 /* End Footer */
