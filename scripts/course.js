@@ -89,15 +89,19 @@ courses.forEach(course => {
     coursesContainer.appendChild(courseElement);
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-    document.querySelectorAll('.selection button').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const filter = btn.id;
-            document.querySelectorAll('.courses span').forEach(span => {
-                span.style.display = filter === 'all' || span.id.startsWith(filter) ? 'block' : 'none';
-                span.style.backgroundColor = filter === 'all' || span.id.startsWith(filter) ? '#000000' : '#E6EDEF';
-                span.style.color = filter === 'all' || span.id.startsWith(filter) ? '#FFFFFF' : '#E6EDEF';
-            });
-        });
+function selectCourse(id) {
+    document.querySelectorAll('.courses span').forEach(span => {
+        span.style.display = id === 'all' || span.id.startsWith(id) ? 'block' : 'none';
+        span.style.backgroundColor = id === 'all' || span.id.startsWith(id) ? '#000000' : '#E6EDEF';
+        span.style.color = id === 'all' || span.id.startsWith(id) ? '#FFFFFF' : '#E6EDEF';
     });
-});
+    let sum = 0;
+    courses.forEach(course => {
+        if (id == course.subject.toLocaleLowerCase()) {
+            sum += course.credits;
+        } else if (id == 'all') {
+            sum += course.credits;
+        }
+    });
+    document.getElementById('total-credits').innerHTML = sum;
+}

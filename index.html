@@ -59,9 +59,9 @@
         <section class="certificates">
             <h2>Web and Computer Programming Certificate</h2>
             <div class="selection">
-                <button onclick="" id="all">All</button>
-                <button onclick="" id="cse">CSE</button>
-                <button onclick="" id="wdd">WDD</button>
+                <button onclick="selectCourse('all')" id="all">All</button>
+                <button onclick="selectCourse('cse')" id="cse">CSE</button>
+                <button onclick="selectCourse('wdd')" id="wdd">WDD</button>
             </div>
             <div class="courses">
                 <span id="cse110">CSE 110</span>
@@ -71,6 +71,7 @@
                 <span id="wdd131">WDD 131</span>
                 <span id="wdd231">WDD 231</span>
             </div>
+            <p id="credits">Total credits <span id="total-credits">0</span></p>
         </section>
     </main>
 
