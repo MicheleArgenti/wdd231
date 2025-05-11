@@ -95,13 +95,11 @@ function selectCourse(id) {
         span.style.backgroundColor = id === 'all' || span.id.startsWith(id) ? '#000000' : '#E6EDEF';
         span.style.color = id === 'all' || span.id.startsWith(id) ? '#FFFFFF' : '#E6EDEF';
     });
-    let sum = 0;
-    courses.forEach(course => {
-        if (id == course.subject.toLocaleLowerCase()) {
-            sum += course.credits;
-        } else if (id == 'all') {
-            sum += course.credits;
+    const sum = courses.reduce((total, course) => {
+        if (id === course.subject.toLocaleLowerCase() || id === 'all') {
+            return total + course.credits;
         }
-    });
+        return total;
+    }, 0);
     document.getElementById('total-credits').innerHTML = sum;
 }
