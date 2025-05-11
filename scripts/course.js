@@ -95,7 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const filter = btn.id;
             document.querySelectorAll('.courses span').forEach(span => {
                 span.style.display = filter === 'all' || span.id.startsWith(filter) ? 'block' : 'none';
-                span.style.backgroundColor = filter === 'all' || span.id.startsWith(filter) ? '#66301D' : '#E6EDEF';
+                span.style.backgroundColor = filter === 'all' || span.id.startsWith(filter) ? '#000000' : '#E6EDEF';
+                span.style.color = filter === 'all' || span.id.startsWith(filter) ? '#FFFFFF' : '#E6EDEF';
             });
         });
     });
