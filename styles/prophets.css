@@ -1,0 +1,41 @@
+header {
+    color: #4D4D96;
+    text-align: center;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    justify-content: center;
+    align-content: center;
+}
+
+h2 {
+    text-align: center;
+    color: #4D4D96;
+}
+
+section {
+    margin: 10px;
+    background-color: #B9B9CC;
+    justify-self: center;
+    align-self: center;
+}
+
+img {
+    padding: 1rem;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    background-color: #1D4D72;
+    text-align: center;
+}
+
+footer p {
+    color: white;
+    padding: 0.5rem;
+}
