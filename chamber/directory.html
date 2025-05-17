@@ -13,7 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-    <script src="scripts/" defer></script>
+    <script src="scripts/navigation.js" defer></script>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta property="og:title" content="Web Frontend Development I - Chamber - Michele Argenti">
     <meta property="og:description" content="Main page of the chamber project.">
@@ -24,35 +24,45 @@
 
 <body>
     <header>
-        <img src="" alt="Timbuktu">
-        <h1>Timbuktu</h1>
-        <p>Chamber of Commerce</p>
-        <nav>
+        <img src="images/timbuktu.png" alt="Timbuktu">
+        <div class="title">
+            <h1>Timbuktu</h1>
+            <p>Chamber of Commerce</p>
+        </div>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <nav class="nav-menu">
+            <button id="dark-light"></button>
             <a href="#">Home</a>
             <a href="">Directory</a>
             <a href="">Join</a>
             <a href="">Discover</a>
-            <button>Theme</button>
         </nav>
     </header>
     <main>
-        <img src="" alt="Hero">
-        <button>Keynote Tickets</button>
+        <div class="hero">
+            <img src="images/hero.png" alt="Hero">
+            <button>Keynote Tickets</button>
+        </div>
         <div class="home">
             <h1>Home</h1>
             <div class="home-card">
                 <h2>Events</h2>
+                <p>Some events here</p>
             </div>
             <div class="home-card">
                 <h2>Current Weather</h2>
-                <img src="" alt="Weather">
+                <img src="images/weather.png" alt="Weather">
                 <p>Weather information</p>
             </div>
             <div class="home-card">
                 <h2>Weather Forecast</h2>
-                <span id="today">Today: </span>
-                <span id="wednesday">Wednesday: </span>
-                <span id="thursday">Thursday: </span>
+                <span id="today">Today: <b>25° C</b></span>
+                <span id="wednesday">Wednesday: <b>26° C</b></span>
+                <span id="thursday">Thursday: <b>20° C</b></span>
             </div>
         </div>
         <div class="business">
@@ -96,13 +106,13 @@
                 Phone<br> </p>
         </section>
         <section>
-            <a href="">
+            <a href="https://www.youtube.com">
                 <img src="" alt="YouTube">
             </a>
-            <a href="">
+            <a href="https://x.com/">
                 <img src="" alt="Twitter">
             </a>
-            <a href="">
+            <a href="https://linkedin.com">
                 <img src="" alt="LinkedIn">
             </a>
         </section>
