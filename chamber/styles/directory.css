@@ -176,6 +176,22 @@ main .business {
     display: grid;
 }
 
+.business .grid-list {
+    grid-column: 1 / -1;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid-list button {
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+.grid-list button img {
+    width: 25px;
+    height: auto;
+}
+
 .business .business-card {
     margin: 0.5rem;
     border: 1px solid black;
@@ -269,7 +285,7 @@ footer section a img {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1130px) {
     header .hamburger {
         display: none;
     }
@@ -283,16 +299,10 @@ footer section a img {
     }
 
     main .business {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     footer {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media screen and (min-width: 1130px) {
-    main .business {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
