@@ -281,10 +281,16 @@ footer section a img {
     }
 
     main .business {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     footer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1130px) {
+    main .business {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
