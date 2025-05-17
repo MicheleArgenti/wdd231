@@ -1,73 +1,72 @@
 [
     {
-        "name": "TechNova Solutions",
-        "address": "123 Innovation Blvd, San Francisco, CA 94107",
-        "phone": "(415) 555-0101",
-        "website": "https://technova.com",
-        "image": "technova-logo.png",
+        "name": "YouTube",
+        "address": "San Bruno, California",
+        "phone": "(1) 111-1111",
+        "website": "https://www.youtube.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/YouTube_2024.svg/250px-YouTube_2024.svg.png",
         "membership": 3,
-        "industry": "Software Development",
-        "founded": 2015
+        "industry": "Streaming",
+        "founded": 2005
     },
     {
-        "name": "GreenEarth Organics",
-        "address": "456 Eco Lane, Portland, OR 97209",
-        "phone": "(503) 555-0202",
-        "website": "https://greenearth.org",
-        "image": "greenearth-icon.svg",
+        "name": "X",
+        "address": "San Francisco, California",
+        "phone": "(1) 222-2222",
+        "website": "www.x.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/X_logo_2023.svg/250px-X_logo_2023.svg.png",
         "membership": 2,
-        "specialty": "Organic Food Distribution",
-        "industry": "Software Development",
-        "founded": 2015
+        "industry": "Social Media",
+        "founded": 2006
     },
     {
-        "name": "Summit Financial Partners",
-        "address": "789 Capital Ave, New York, NY 10005",
-        "phone": "(212) 555-0303",
-        "website": "https://summitfinancial.com",
-        "image": "summit-financial.jpg",
+        "name": "Facebook",
+        "address": "San Francisco, California",
+        "phone": "(1) 333-3333",
+        "website": "https://www.facebook.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/2023_Facebook_icon.svg/120px-2023_Facebook_icon.svg.png",
         "membership": 3,
-        "industry": "Software Development",
-        "founded": 2015
+        "industry": "Social Media",
+        "founded": 2004
     },
     {
-        "name": "UrbanStyle Apparel",
-        "address": "101 Fashion St, Los Angeles, CA 90015",
-        "phone": "(213) 555-0404",
-        "website": "https://urbanstyle.com",
-        "image": "urbanstyle-logo.png",
+        "name": "Instagram",
+        "address": "San Francisco, California",
+        "phone": "(1) 444-4444",
+        "website": "https://www.instagram.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/250px-Instagram_logo_2022.svg.png",
         "membership": 1,
-        "industry": "Software Development",
+        "industry": "Social Media",
         "founded": 2015
     },
     {
-        "name": "BlueWave Robotics",
-        "address": "202 Automation Parkway, Boston, MA 02210",
-        "phone": "(617) 555-0505",
-        "website": "https://bluewaverobotics.ai",
-        "image": "bluewave-icon.svg",
+        "name": "Spotify",
+        "address": "Stockholm",
+        "phone": "(1) 555-5555",
+        "website": "https://www.spotify.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/2024_Spotify_Logo.svg/250px-2024_Spotify_Logo.svg.png",
         "membership": 2,
-        "industry": "Software Development",
-        "founded": 2015
+        "industry": "Music",
+        "founded": 2006
     },
     {
-        "name": "TerraFirma Construction",
-        "address": "303 Builders Way, Chicago, IL 60606",
-        "phone": "(312) 555-0606",
-        "website": "https://terrafirmaconstruction.com",
-        "image": "terrafirma-logo.jpg",
+        "name": "Accenture",
+        "address": "Dublin",
+        "phone": "(1) 666-6666",
+        "website": "https://www.accenture.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Accenture.svg/200px-Accenture.svg.png",
         "membership": 1,
-        "industry": "Software Development",
-        "founded": 2015
+        "industry": "IT",
+        "founded": 1913
     },
     {
-        "name": "Pinnacle Hospitality Group",
-        "address": "404 Resort Drive, Miami, FL 33139",
-        "phone": "(305) 555-0707",
-        "website": "https://pinnaclehotels.com",
-        "image": "pinnacle-hospitality.png",
+        "name": "Google",
+        "address": "Menlo Park, California",
+        "phone": "(1) 777-7777",
+        "website": "https://www.google.com",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/250px-Google_2015_logo.svg.png",
         "membership": 3,
-        "industry": "Software Development",
-        "founded": 2015
+        "industry": "IT",
+        "founded": 1997
     }
 ]
