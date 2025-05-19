@@ -1,9 +1,9 @@
 /* Global Variable */
 :root {
-    --primary: #005F73;
+    --primary: #164E70;
     --secondary: #0A9396;
     --backgournd: #FFFFFF;
-    --text: #1A1A1A;
+    --text: #FFFFFF;
     --accent: #94D2BD;
 }
 
@@ -25,6 +25,7 @@ header {
     align-items: center;
     padding: 0.5rem;
     justify-content: space-between;
+    color: var(--text);
 }
 
 header img {
@@ -108,6 +109,7 @@ main {
     max-width: 1200px;
     margin: auto;
     padding: 0.5rem;
+    color: #000000;
 }
 
 main .hero {
@@ -123,6 +125,8 @@ main .hero img {
 }
 
 main .hero button {
+    background-color: var(--primary);
+    color: var(--text);
     position: absolute;
     bottom: 10%;
     right: 10px;
@@ -130,6 +134,7 @@ main .hero button {
     text-align: center;
     border-radius: 10px;
     border: none;
+    font-weight: bold;
 }
 
 main .home {
@@ -155,6 +160,7 @@ main .home {
     padding: 0.5rem;
     grid-column: 1 / -1;
     min-height: 20px;
+    color: var(--text);
 }
 
 .home-card p {
