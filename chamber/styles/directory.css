@@ -42,10 +42,14 @@ header img {
     margin: 0;
 }
 
-.title h1,
+.title b,
 .title p {
     margin: 0;
     line-height: 1.1;
+}
+
+.title b {
+    font-size: 30px;
 }
 
 header button {
