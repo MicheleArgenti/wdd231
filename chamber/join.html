@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 331 - Join - Michele Argenti</title>
+    <meta name="description" content="Join page of the chamber project.">
+    <meta name="author" content="Michele Argenti">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <script src="scripts/dates.js" defer></script>
+    <link rel="icon" href="https://micheleargenti.github.io/wdd231/chamber/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Web Frontend Development I - Join - Michele Argenti">
+    <meta property="og:description" content="Join page of the chamber project.">
+
+    <meta property="og:url" content="https://micheleargenti.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://micheleargenti.github.io/wdd231/chamber/images/timbuktu.png" />
+</head>
+
+<body>
+    <header>
+        <img src="images/timbuktu.png" alt="Timbuktu">
+        <div class="title">
+            <b>Timbuktu</b>
+            <p>Chamber of Commerce</p>
+        </div>
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <nav class="nav-menu">
+            <button id="dark-light"></button>
+            <a href="index.html">Home</a>
+            <a href="#">Directory</a>
+            <a href="">Join</a>
+            <a href="">Discover</a>
+        </nav>
+    </header>
+    <main class="join">
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <legend>Membership Application Form</legend>
+                <label for="firstName">First Name <span class="required">*</span></label>
+                <input type="text" id="firstName" name="firstName" title="Please enter your first name"
+                    autocomplete="given-name" required>
+                <label for="lastName">Last Name <span class="required">*</span></label>
+                <input type="text" id="lastName" name="lastName" title="Please enter your last name"
+                    autocomplete="family-name" required>
+                <label for="orgTitle">Organizational Title</label>
+                <input type="text" id="orgTitle" name="orgTitle" title="Your position in the organization"
+                    autocomplete="organization-title" pattern="[a-zA-Z\s\-]{7,}"
+                    title="Minimum 7 alpha characters, hyphens, or spaces only">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" title="Please enter a valid email address"
+                    autocomplete="email" placeholder="example@domain.com" required>
+                <label for="phone">Mobile Phone Number <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" title="Please enter your mobile phone number"
+                    autocomplete="tel" required>
+                <label for="organization">Business/Organization Name <span class="required">*</span></label>
+                <input type="text" id="organization" name="organization" title="Name of your organization"
+                    autocomplete="organization" required>
+                <label for="description">Business/Organization Description</label>
+                <textarea id="description" name="description" title="Brief description of your organization"></textarea>
+            </fieldset>
+            <div class="membership-levels">
+                <div class="membership-levels-card">
+                    <p>Non Profit Memebership Level</p>
+                    <button onclick="document.getElementById('npModal').style.display = 'block'">Learn More</button>
+                </div>
+                <div class=" membership-levels-card">
+                    <p>Bronze Memebership Level</p>
+                    <button onclick="document.getElementById('bronzeModal').style.display = 'block'">Learn More</button>
+                </div>
+                <div class="membership-levels-card">
+                    <p>Silver Memebership Level</p>
+                    <button onclick="document.getElementById('silverModal').style.display = 'block'">Learn More</button>
+                </div>
+                <div class="membership-levels-card">
+                    <p>Gold Memebership Level</p>
+                    <button onclick="document.getElementById('goldModal').style.display = 'block'">Learn More</button>
+                </div>
+            </div>
+            <button type="submit">Submit Application</button>
+        </form>
+        <dialog id="npModal">
+            <div class="modal-header">
+                <h2>Non-Profit Membership</h2>
+                <button class="close-modal"
+                    onclick="document.getElementById('npModal').style.display = 'none'">x</button>
+            </div>
+            <div class="membership-price">Cost: Free</div>
+            <ul class="benefits-list">
+                <li>Access to member directory</li>
+                <li>Monthly newsletter</li>
+                <li>Basic listing on our website</li>
+                <li>Invitation to annual conference</li>
+                <li>5% discount on event tickets</li>
+            </ul>
+        </dialog>
+        <dialog id="bronzeModal">
+            <div class="modal-header">
+                <h2>Bronze Membership</h2>
+                <button class="close-modal"
+                    onclick="document.getElementById('bronzeModal').style.display = 'none'">x</button>
+            </div>
+            <div class="membership-price">Cost: $250/year</div>
+            <ul class="benefits-list">
+                <li>All Non-Profit benefits</li>
+                <li>Quarterly training workshops</li>
+                <li>Enhanced website listing</li>
+                <li>10% discount on event tickets</li>
+                <li>Access to member-only resources</li>
+                <li>Two spotlight features per year</li>
+            </ul>
+        </dialog>
+        <dialog id="silverModal">
+            <div class="modal-header">
+                <h2>Silver Membership</h2>
+                <button class="close-modal"
+                    onclick="document.getElementById('silverModal').style.display = 'none'">x</button>
+            </div>
+            <div class="membership-price">Cost: $500/year</div>
+            <ul class="benefits-list">
+                <li>All Bronze benefits</li>
+                <li>Monthly training sessions</li>
+                <li>Priority event registration</li>
+                <li>15% discount on event tickets</li>
+                <li>Featured in monthly newsletter</li>
+                <li>Quarterly spotlight features</li>
+                <li>Access to premium resources</li>
+            </ul>
+        </dialog>
+        <dialog id="goldModal">
+            <div class="modal-header">
+                <h2>Gold Membership</h2>
+                <button class="close-modal"
+                    onclick="document.getElementById('goldModal').style.display = 'none'">x</button>
+            </div>
+            <div class="membership-price">Cost: $1,000/year</div>
+            <ul class="benefits-list">
+                <li>All Silver benefits</li>
+                <li>Bi-weekly expert consultations</li>
+                <li>20% discount on all events</li>
+                <li>Homepage featured placement</li>
+                <li>Monthly spotlight features</li>
+                <li>VIP access to all conferences</li>
+                <li>Dedicated account manager</li>
+                <li>Custom training sessions</li>
+            </ul>
+        </dialog>
+    </main>
+    <footer>
+        <section>
+            <h4>Timbuktu Chamber of Commerce</h4>
+            <p> 123 Fairy Street, San Francisco, CA 94107<br>
+                timbuktu@chamber.com<br>
+                (1) 123 456 7890</p>
+        </section>
+        <section>
+            <a href="https://www.youtube.com">
+                <img src="images/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/x.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        </section>
+        <section>
+            <p>WDD231 Class project <br>
+                Michele Argenti
+                © <span id="currentyear"></span> Timbuktu Chamber of Commerce <br>
+                Last Modification: <span id="lastModified"></span> </p>
+        </section>
+    </footer>
+</body>
+
+</html>

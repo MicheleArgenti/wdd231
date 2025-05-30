@@ -249,6 +249,56 @@ main .business {
     grid-template-columns: 1fr 1fr;
 }
 
+form {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1),
+        0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+form fieldset {
+    display: grid;
+}
+
+form label {
+    padding: 0.5rem;
+}
+
+form input {
+    padding: 0.5rem;
+}
+
+form button {
+    margin: 0.5rem;
+}
+
+.membership-levels-card {
+    text-align: center;
+    border: 1px solid black;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0.5rem;
+}
+
+dialog {
+    top: 150%;
+    width: 400px;
+    border-radius: 0 0 0 8px;
+}
+
+.thank-you {
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Footer */
 
 footer {
@@ -293,6 +343,7 @@ footer section a img {
     footer {
         grid-template-columns: 1fr;
     }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -314,5 +365,18 @@ footer section a img {
 
     footer {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    dialog {
+        top: 30%;
+        right: 10px;
+        left: auto;
+        width: 400px;
+        border-radius: 0 0 0 8px;
     }
 }
