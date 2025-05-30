@@ -116,6 +116,10 @@ main {
     color: #000000;
 }
 
+main h1 {
+    text-align: center;
+}
+
 main .hero {
     position: relative;
 }
