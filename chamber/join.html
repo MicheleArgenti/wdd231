@@ -75,6 +75,10 @@
                     <option value="Silver">Silver Membership</option>
                     <option value="Gold">Gold Membership</option>
                 </select>
+                <input type="hidden" id="timestamp" name="timestamp">
+                <script>
+                    document.getElementById('timestamp').value = new Date().toISOString();
+                </script>
             </fieldset>
             <div class="membership-levels">
                 <div class="membership-levels-card">
