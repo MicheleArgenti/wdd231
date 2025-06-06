@@ -1,0 +1,56 @@
+/* General */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap');
+
+:root {
+    --primary: #1598D7;
+    --secondary: #BF232C;
+    --accent1: #0E0E0C;
+    --accent2: #344E91;
+    --primary-font: 'Lato', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    font-family: var(--primary-font);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+header img {
+    width: 250px;
+    height: auto;
+    padding: 0.5rem;
+}
+
+/* Main */
+
+main {
+    padding: 0.5rem;
+}
+
+main h2 {
+    font-family: var(--primary-font);
+}
+
+main p {
+    font-family: var(--secondary-font);
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary);
+    text-align: center;
+    padding: 0.5rem;
+}
