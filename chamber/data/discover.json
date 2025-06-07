@@ -1,0 +1,58 @@
+[
+    {
+        "locationName": "Sankore Mosque & University",
+        "address": "Mali, Timbuktu",
+        "description": "Sankoré Madrasa is one of three medieval mosques and centres of learning",
+        "img": "images/sankore-mosque-university.webp",
+        "link": "https://en.wikipedia.org/wiki/Sankor%C3%A9_Madrasah"
+    },
+    {
+        "locationName": "Djinguereber Mosque",
+        "address": "Mali, Timbuktu",
+        "description": "The Djinguereber Mosque is a famous learning center in Timbuktu, Mali",
+        "img": "images/djinguereber-mosque.webp",
+        "link": "https://en.wikipedia.org/wiki/Djinguereber_Mosque"
+    },
+    {
+        "locationName": "Ahmed Baba Institute",
+        "address": "Mali, Timbuktu",
+        "description": "The Ahmed Baba Institute is a library and research centre in Timbuktu",
+        "img": "images/ahmed-baba-institute.webp",
+        "link": "https://en.wikipedia.org/wiki/Ahmed_Baba_Institute"
+    },
+    {
+        "locationName": "Timbuktu Manuscripts",
+        "address": "Mali, Timbuktu",
+        "description": "Timbuktu Manuscripts is a blanket term for the large number of historically significant manuscripts that have been preserved for centuries in private households in Timbuktu, a city in northern Mali",
+        "img": "images/timbuktu-manuscripts.webp",
+        "link": "https://en.wikipedia.org/wiki/Timbuktu_Manuscripts"
+    },
+    {
+        "locationName": "Explore the Sahara Desert",
+        "address": "Mali",
+        "description": "The Sahara is a desert spanning across North Africa. With an area of 9,200,000 square kilometres (3,600,000 sq mi), it is the largest hot desert in the world and the third-largest desert overall, smaller only than the deserts of Antarctica and the northern Arctic",
+        "img": "images/sahara.webp",
+        "link": "https://en.wikipedia.org/wiki/Sahara"
+    },
+    {
+        "locationName": "Festival au Désert",
+        "address": "Mali, Timbuktu",
+        "description": "The Festival au désert (Festival in the Desert) was an annual concert in Mali, showcasing traditional Tuareg music as well as music from around the world between 2001 and 2012. It was founded and directed by Manny Ansar, and attracted thousands of visitors, bringing a huge boost to the economy",
+        "img": "images/festival-au-désert.webp",
+        "link": "https://en.wikipedia.org/wiki/Festival_au_D%C3%A9sert#:~:text=The%20Festival%20au%20d%C3%A9sert%20(Festival,huge%20boost%20to%20the%20economy."
+    },
+    {
+        "locationName": "Flame of Peace Monument",
+        "address": "Mali, Timbuktu",
+        "description": "The Peace Flame is another monument to the victims of the bomb that destroyed Hiroshima, but it has an additional symbolic purpose",
+        "img": "images/flame-of-peace-monument.webp",
+        "link": "https://en.wikipedia.org/wiki/Hiroshima_Peace_Memorial_Park#:~:text=Peace%20Flame,-The%20Peace%20Flame&text=The%20flame%20has%20burned%20continuously,in%20the%20Hiroshima%20Peace%20Park."
+    },
+    {
+        "locationName": "Sidi Yahya Mosque",
+        "address": "Mali, Timbuktu",
+        "description": "The Sidi Yahya Mosque is a mosque and madrasa of Timbuktu in Mali",
+        "img": "images/sidi-yahya-mosque.webp",
+        "link": "https://en.wikipedia.org/wiki/Sidi_Yahya_Mosque"
+    }
+]

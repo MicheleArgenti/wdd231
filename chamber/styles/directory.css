@@ -303,6 +303,73 @@ dialog {
     align-items: center;
 }
 
+
+
+.discover h1 {
+    grid-area: title;
+    text-align: center;
+}
+
+.discover-card:nth-child(1) {
+    grid-area: card1;
+}
+
+.discover-card:nth-child(2) {
+    grid-area: card2;
+}
+
+.discover-card:nth-child(3) {
+    grid-area: card3;
+}
+
+.discover-card:nth-child(4) {
+    grid-area: card4;
+}
+
+.discover-card:nth-child(5) {
+    grid-area: card5;
+}
+
+.discover-card:nth-child(6) {
+    grid-area: card6;
+}
+
+.discover-card:nth-child(7) {
+    grid-area: card7;
+}
+
+.discover-card:nth-child(8) {
+    grid-area: card8;
+}
+
+.discover-card h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.discover-card img {
+    width: 300px;
+    height: 200px;
+    justify-self: center;
+}
+
+.discover-card p {
+    margin: 0;
+    padding: 0.5rem;
+}
+
+.discover-card button {
+    width: 80%;
+    border-radius: 10px;
+    justify-self: center;
+}
+
+aside {
+    grid-area: aside;
+    text-align: center;
+}
+
 /* Footer */
 
 footer {
@@ -329,6 +396,7 @@ footer section a img {
 
 /* Media Query */
 
+/* Small screen */
 @media screen and (max-width: 768px) {
     header nav {
         display: none;
@@ -350,6 +418,7 @@ footer section a img {
 
 }
 
+/* Medium screen */
 @media screen and (min-width: 769px) {
     header .hamburger {
         display: none;
@@ -382,5 +451,19 @@ footer section a img {
         left: auto;
         width: 400px;
         border-radius: 0 0 0 8px;
+    }
+}
+
+/* Big screen */
+@media screen and (min-width: 1100px) {
+    .discover {
+        display: grid;
+        grid-template-areas:
+            "title title title"
+            "card1 card2 card3"
+            "card4 card5 card6"
+            "card7 card8 card9"
+            "aside aside aside";
+        padding: 20px;
     }
 }
