@@ -416,6 +416,21 @@ footer section a img {
         grid-template-columns: 1fr;
     }
 
+    .discover {
+        display: grid;
+        grid-template-areas:
+            "title"
+            "card1"
+            "card2"
+            "card3"
+            "card4"
+            "card5"
+            "card6"
+            "card7"
+            "card8"
+            "aside";
+        padding: 20px;
+    }
 }
 
 /* Medium screen */
@@ -452,9 +467,22 @@ footer section a img {
         width: 400px;
         border-radius: 0 0 0 8px;
     }
+
+    .discover {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8"
+            "aside aside";
+        padding: 20px;
+    }
 }
 
 /* Big screen */
+
 @media screen and (min-width: 1100px) {
     .discover {
         display: grid;
