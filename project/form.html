@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Form - Michele Argenti</title>
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals | Michele Argenti | Project Form">
+    <meta name="author" content="Michele Argenti">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getDates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.webp" alt="Pokémon World" loading="lazy">
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us!</h1>
+        <form action="submitted.html" method="get">
+            <label for="firstName">First Name *</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name *</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email *</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="question">Questions *</label>
+            <textarea id="question" name="question" rows="5" required></textarea>
+
+            <input type="submit" value="Contact Us" id="submit">
+        </form>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> 😎 Michele Argenti 😎 Italy</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
